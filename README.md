@@ -1,7 +1,7 @@
 # KeySound
 > App play sound when your press keys
 
-![Menu](https://prnt.sc/1vgde2s)
+![Menu](https://image.prntscr.com/image/3ZTIublzRlaKpZnGhBMSKA.png)
 
 ### How to use?
 1. Download and extract repository
