@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeySound Config</title>
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <script>
+        function change_volume() {
+            let element = document.querySelector("#volume");
+
+            let label = document.querySelector("#volumeLabel");
+
+            label.textContent = element.value;
+        }
+    </script>
+</head>
+<body>
+    <form action="change" method="get">
+        <div>
+            Volume
+            <input type="range" id="volume" name="volume" min="0" max="100" value="{{ volume }}" onchange="change_volume()">
+            <label for="volume" id="volumeLabel">{{ volume }}</label>
+        </div>
+        <div>
+            Sound
+            <input type="text" name="sound" value="{{ sound }}">
+        </div>
+        <div>
+            Enable
+            <input type="checkbox" name="work" checked>
+        </div>
+        <button type="submit">Apply</button>
+    </form>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</body>
+</html>
